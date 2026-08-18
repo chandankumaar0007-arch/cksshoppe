@@ -3,59 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CKS Shoppe — Genuine Digital Software & Antivirus</title>
+  <title>CKS Shoppe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Top bar -->
-  <div class="announcement">
-    ⚡ Instant Key Delivery via WhatsApp • 100% Genuine Digital Licenses
+  <div class="top-bar">
+    🔥 CKS Shoppe — Genuine Digital Products • Fast Delivery • WhatsApp Support
   </div>
 
-  <!-- Navbar -->
-  <header class="navbar">
+  <header class="header">
     <div class="logo">CKS SHOPPE</div>
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search Windows, Office, Antivirus..." onkeyup="filterProducts()">
+    <div class="search-container">
+      <input type="text" placeholder="Search Windows, Office, Antivirus...">
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="nav-links">
+      <a href="#products">Products</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Premium Software.<br><span>Unbeatable Prices.</span></h1>
-      <p>Original digital activation licenses for Windows, Microsoft Office, Antivirus and Servers delivered instantly.</p>
-      <button class="hero-btn" onclick="document.getElementById('products-section').scrollIntoView({behavior: 'smooth'})">Explore Products ↓</button>
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="tag">CKS SHOPPE</span>
+      <h1>Premium Software.<br>Better Prices.</h1>
+      <p>Windows, Microsoft Office, Antivirus and other digital products — delivered quickly after payment.</p>
+      <a href="#ck-product-grid" class="shop-btn">Shop Now →</a>
     </div>
-    <div class="hero-card">
-      <span class="badge">BEST VALUE</span>
-      <h3 style="margin: 14px 0 6px; font-size: 20px;">Windows + Office</h3>
-      <p style="color: #94a3b8; font-size: 13px; margin-bottom: 16px;">Lifetime Genuine Activation</p>
-      <div style="font-size: 28px; font-weight: 800; color: #38bdf8;">From ₹1499</div>
+    <div class="hero-badge-card">
+      <span class="badge-tag">BEST VALUE</span>
+      <h2>Windows + Office</h2>
+      <p>Digital activation products</p>
+      <div class="price-text">From ₹1499</div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="features-strip">
-    <div class="feature-item"><strong>⚡ Instant Delivery</strong>Digital keys on WhatsApp</div>
-    <div class="feature-item"><strong>🔒 Verified Genuine</strong>100% Authentic Licenses</div>
-    <div class="feature-item"><strong>💬 Personal Support</strong>Direct support from Chandan</div>
+  <section class="features-bar">
+    <div class="feat">
+      <strong>Fast Delivery</strong>
+      <span>Digital products</span>
+    </div>
+    <div class="feat">
+      <strong>Secure Payment</strong>
+      <span>Protected checkout</span>
+    </div>
+    <div class="feat">
+      <strong>WhatsApp Support</strong>
+      <span>Quick assistance</span>
+    </div>
+    <div class="feat">
+      <strong>GST Invoice</strong>
+      <span>For eligible orders</span>
+    </div>
   </section>
 
-  <!-- Category Bar -->
-  <div class="category-bar" id="products-section">
-    <button class="cat-btn active" onclick="filterCategory('All')">All Products</button>
-    <button class="cat-btn" onclick="filterCategory('Guardian')">Guardian</button>
-    <button class="cat-btn" onclick="filterCategory('Quick Heal')">Quick Heal</button>
-    <button class="cat-btn" onclick="filterCategory('Kaspersky')">Kaspersky</button>
-    <button class="cat-btn" onclick="filterCategory('Windows OS')">Windows OS</button>
-    <button class="cat-btn" onclick="filterCategory('MS Office')">MS Office</button>
-    <button class="cat-btn" onclick="filterCategory('Windows Server')">Servers</button>
-  </div>
-
-  <!-- Product Catalog Grid -->
-  <div id="ck-product-grid"></div>
+  <main id="products">
+    <div id="ck-product-grid"></div>
+  </main>
 
   <script src="script.js"></script>
 </body>
