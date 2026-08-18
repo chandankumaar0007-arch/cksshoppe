@@ -1,66 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CKS Shoppe</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CKS Shoppe — Premium Software & Digital Products</title>
+    <meta name="description" content="CKS Shoppe — Windows, Office, Antivirus & Genuine Digital Software Licenses with Instant WhatsApp Delivery.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <div class="top-bar">
-    🔥 CKS Shoppe — Genuine Digital Products • Fast Delivery • WhatsApp Support
-  </div>
+    <!-- Top Announcement Bar -->
+    <div class="top">
+        🔥 <b>CKS SHOPPE</b> — 100% Genuine Digital Licenses • Instant WhatsApp Delivery • 24/7 Support
+    </div>
 
-  <header class="header">
-    <div class="logo">CKS SHOPPE</div>
-    <div class="search-container">
-      <input type="text" placeholder="Search Windows, Office, Antivirus...">
-      <button class="search-btn">Search</button>
-    </div>
-    <div class="nav-links">
-      <a href="#products">Products</a>
-    </div>
-  </header>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="nav">
+            <a class="logo" href="#">CKS <span>SHOPPE</span></a>
+            <div class="search">
+                <input id="search" type="text" placeholder="Search Windows, Office, Antivirus..." onkeyup="searchProducts()">
+                <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>
+            <div class="navlinks">
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#contact">Contact</a>
+                <button class="cart" onclick="openCart()">
+                    🛒 Cart <b id="cartCount">0</b>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-  <section class="hero-section">
-    <div class="hero-content">
-      <span class="tag">CKS SHOPPE</span>
-      <h1>Premium Software.<br>Better Prices.</h1>
-      <p>Windows, Microsoft Office, Antivirus and other digital products — delivered quickly after payment.</p>
-      <a href="#ck-product-grid" class="shop-btn">Shop Now →</a>
-    </div>
-    <div class="hero-badge-card">
-      <span class="badge-tag">BEST VALUE</span>
-      <h2>Windows + Office</h2>
-      <p>Digital activation products</p>
-      <div class="price-text">From ₹1499</div>
-    </div>
-  </section>
+    <!-- Hero Banner Section -->
+    <section class="hero">
+        <div>
+            <p class="eyebrow">⚡ Instant Digital Delivery</p>
+            <h1>Premium Software.<br><span>Unbeatable Prices.</span></h1>
+            <p class="sub">Get genuine product keys for Windows, MS Office, Antivirus, and utilities. Fast delivery directly via WhatsApp after payment.</p>
+            <a class="btn" href="#products">Shop Best Deals →</a>
+        </div>
+        <div class="hero-card">
+            <div class="badge">🔥 TOP SELLER COMBO</div>
+            <h3>Windows 11 + Office 2021</h3>
+            <p>Lifetime Genuine Activation</p>
+            <strong>₹1,499</strong>
+            <div style="margin-top: 15px;">
+                <a class="btn" style="padding: 10px 18px; font-size: 13px;" href="https://wa.me/916200864464?text=Hi,%20I%20want%20the%20Win11+Office2021%20combo%20deal" target="_blank">Order Now</a>
+            </div>
+        </div>
+    </section>
 
-  <section class="features-bar">
-    <div class="feat">
-      <strong>Fast Delivery</strong>
-      <span>Digital products</span>
-    </div>
-    <div class="feat">
-      <strong>Secure Payment</strong>
-      <span>Protected checkout</span>
-    </div>
-    <div class="feat">
-      <strong>WhatsApp Support</strong>
-      <span>Quick assistance</span>
-    </div>
-    <div class="feat">
-      <strong>GST Invoice</strong>
-      <span>For eligible orders</span>
-    </div>
-  </section>
+    <!-- Trust Highlights -->
+    <section class="trust">
+        <div>
+            <b>⚡ Instant Delivery</b>
+            <small>Direct activation key on WhatsApp</small>
+        </div>
+        <div>
+            <b>🔒 100% Genuine</b>
+            <small>Guaranteed authentic software</small>
+        </div>
+        <div>
+            <b>💬 Fast Support</b>
+            <small>Installation & activation assistance</small>
+        </div>
+        <div>
+            <b>💳 Easy Payment</b>
+            <small>Instant UPI / QR Code transfer</small>
+        </div>
+    </section>
 
-  <main id="products">
-    <div id="ck-product-grid"></div>
-  </main>
+    <!-- Category Filter Section -->
+    <section id="categories" class="section">
+        <div class="section-head">
+            <h2>Explore Categories</h2>
+        </div>
+        <div class="cats">
+            <button onclick="filterCat('Windows')">🪟 Windows OS</button>
+            <button onclick="filterCat('Office')">📄 MS Office</button>
+            <button onclick="filterCat('Antivirus')">🛡️ Antivirus</button>
+            <button onclick="filterCat('Tools')">🧰 Utilities</button>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Products Grid Section -->
+    <section id="products" class="section">
+        <div class="section-head">
+            <h2>Featured Products</h2>
+            <button class="clear" onclick="filterCat('All')">View All Products →</button>
+        </div>
+        <div id="productGrid" class="grid"></div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="deal">
+        <div>
+            <p class="eyebrow" style="color: #cbd5e1;">EXCLUSIVE PROMOTION</p>
+            <h2>Upgrade Your PC with Genuine Software</h2>
+            <p>Direct support and easy setup instructions sent right to your chat.</p>
+        </div>
+        <a class="btn light" href="https://wa.me/916200864464" target="_blank">Chat with Us</a>
+    </section>
+
+    <!-- Contact & Support Section -->
+    <section id="contact" class="section contact">
+        <h2>Need Any Help?</h2>
+        <p>Have questions about compatibility, product keys, or setup? Connect with us directly.</p>
+        <a class="btn" href="https://wa.me/916200864464" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Support (+91 6200864464)
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <b>CKS SHOPPE</b>
+            <p>Your trusted store for genuine Windows OS, Microsoft Office, Antivirus security keys, and system utilities.</p>
+        </div>
+        <div>
+            <b>Quick Links</b>
+            <p><a href="#products">Products</a><br><a href="#categories">Categories</a><br><a href="#contact">Support</a></p>
+        </div>
+        <div>
+            <b>Order Support</b>
+            <p>WhatsApp: +91 6200864464<br>Delivery: Digital via WhatsApp / Email</p>
+        </div>
+        <div class="copy">
+            © 2026 CKS Shoppe. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Cart Modal Popup -->
+    <div id="cartModal" class="modal">
+        <div class="modalbox">
+            <button class="x" onclick="closeCart()">×</button>
+            <h2>Your Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="total">Total: ₹<span id="total">0</span></div>
+            <button class="btn full" onclick="checkout()">Proceed to Checkout (WhatsApp)</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
 </body>
 </html>
