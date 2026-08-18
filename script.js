@@ -110,22 +110,22 @@ const products = [
   { id: 4, name: "Guardian Internet Security (1 User / 1 Year)", basePrice: 180, price: 380, category: "Guardian" },
   { id: 5, name: "Guardian Internet Security (3 User / 1 Year)", basePrice: 450, price: 650, category: "Guardian" },
   { id: 6, name: "Guardian Total Security (1 User / 1 Year)", basePrice: 295, price: 495, category: "Guardian" },
-  { id: 7, name: "Guardian Total Security (3 User / 1 Year)", basePrice: 699, price: 899, category: "Guardian" },
-  { id: 8, name: "Guardian Total Security (1 User / 3 Years)", basePrice: 650, price: 850, category: "Guardian" },
+  { id: 7, name: "Guardian Total Security (3 User / 1 Year)", basePrice: 699, price: 999, category: "Guardian" },
+  { id: 8, name: "Guardian Total Security (1 User / 3 Years)", basePrice: 650, price: 899, category: "Guardian" },
 
   // ================= QUICK HEAL =================
   { id: 9, name: "Quick Heal Pro Antivirus (1 User / 1 Year)", basePrice: 349, price: 549, category: "Quick Heal" },
-  { id: 10, name: "Quick Heal Pro Antivirus (2 User / 1 Year)", basePrice: 599, price: 799, category: "Quick Heal" },
-  { id: 11, name: "Quick Heal Pro Antivirus (3 User / 1 Year)", basePrice: 799, price: 999, category: "Quick Heal" },
+  { id: 10, name: "Quick Heal Pro Antivirus (2 User / 1 Year)", basePrice: 599, price: 899, category: "Quick Heal" },
+  { id: 11, name: "Quick Heal Pro Antivirus (3 User / 1 Year)", basePrice: 799, price: 1199, category: "Quick Heal" },
   { id: 12, name: "Quick Heal Pro Antivirus (1 User / 3 Years)", basePrice: 750, price: 950, category: "Quick Heal" },
   { id: 13, name: "Quick Heal Internet Security (1 User / 1 Year)", basePrice: 450, price: 650, category: "Quick Heal" },
   { id: 14, name: "Quick Heal Internet Security (3 User / 1 Year)", basePrice: 950, price: 1150, category: "Quick Heal" },
   { id: 15, name: "Quick Heal Total Security (1 User / 1 Year)", basePrice: 799, price: 999, category: "Quick Heal" },
-  { id: 16, name: "Quick Heal Total Security (2 User / 1 Year)", basePrice: 1350, price: 1550, category: "Quick Heal" },
+  { id: 16, name: "Quick Heal Total Security (2 User / 1 Year)", basePrice: 1350, price: 1780, category: "Quick Heal" },
   { id: 17, name: "Quick Heal Total Security (3 User / 1 Year)", basePrice: 1650, price: 1850, category: "Quick Heal" },
   { id: 18, name: "Quick Heal Total Security (5 User / 1 Year)", basePrice: 2450, price: 2650, category: "Quick Heal" },
   { id: 19, name: "Quick Heal Total Security (10 User / 1 Year)", basePrice: 4500, price: 4700, category: "Quick Heal" },
-  { id: 20, name: "Quick Heal Total Security (1 User / 3 Years)", basePrice: 1100, price: 1300, category: "Quick Heal" },
+  { id: 20, name: "Quick Heal Total Security (1 User / 3 Years)", basePrice: 1100, price: 1580, category: "Quick Heal" },
   { id: 21, name: "Quick Heal Total Security (3 User / 3 Years)", basePrice: 2600, price: 2800, category: "Quick Heal" },
 
   // ================= KASPERSKY =================
