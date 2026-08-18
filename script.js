@@ -110,8 +110,8 @@ const products = [
   { id: 4, name: "Guardian Internet Security (1 User / 1 Year)", basePrice: 180, price: 380, category: "Guardian" },
   { id: 5, name: "Guardian Internet Security (3 User / 1 Year)", basePrice: 450, price: 650, category: "Guardian" },
   { id: 6, name: "Guardian Total Security (1 User / 1 Year)", basePrice: 295, price: 495, category: "Guardian" },
-  { id: 7, name: "Guardian Total Security (3 User / 1 Year)", basePrice: 699, price: 999, category: "Guardian" },
-  { id: 8, name: "Guardian Total Security (1 User / 3 Years)", basePrice: 650, price: 899, category: "Guardian" },
+  { id: 7, name: "Guardian Total Security (3 User / 1 Year)", basePrice: 699, price: 1050, category: "Guardian" },
+  { id: 8, name: "Guardian Total Security (1 User / 3 Years)", basePrice: 650, price: 999, category: "Guardian" },
 
   // ================= QUICK HEAL =================
   { id: 9, name: "Quick Heal Pro Antivirus (1 User / 1 Year)", basePrice: 349, price: 549, category: "Quick Heal" },
@@ -179,16 +179,16 @@ const products = [
   { id: 59, name: "Microsoft 365 Family (6 Users / 1 Year Subscription)", basePrice: 3899, price: 4099, category: "MS Office" },
 
   // ================= PROJECT, VISIO & WINDOWS SERVERS =================
-  { id: 60, name: "Microsoft Project Professional 2019 Key", basePrice: 999, price: 1199, category: "MS Office" },
+  { id: 60, name: "Microsoft Project Professional 2019 Key", basePrice: 999, price: 1499, category: "MS Office" },
   { id: 61, name: "Microsoft Project Professional 2021 Key", basePrice: 1199, price: 1399, category: "MS Office" },
-  { id: 62, name: "Microsoft Visio Professional 2019 Key", basePrice: 999, price: 1199, category: "MS Office" },
+  { id: 62, name: "Microsoft Visio Professional 2019 Key", basePrice: 999, price: 1499, category: "MS Office" },
   { id: 63, name: "Microsoft Visio Professional 2021 Key", basePrice: 1199, price: 1399, category: "MS Office" },
-  { id: 64, name: "Windows Server 2016 Standard (16 Core)", basePrice: 1499, price: 1699, category: "Windows Server" },
-  { id: 65, name: "Windows Server 2019 Standard (16 Core)", basePrice: 1799, price: 1999, category: "Windows Server" },
+  { id: 64, name: "Windows Server 2016 Standard (16 Core)", basePrice: 1499, price: 2599, category: "Windows Server" },
+  { id: 65, name: "Windows Server 2019 Standard (16 Core)", basePrice: 1799, price: 2599, category: "Windows Server" },
   { id: 66, name: "Windows Server 2019 Datacenter", basePrice: 2499, price: 2699, category: "Windows Server" },
-  { id: 67, name: "Windows Server 2022 Standard (16 Core)", basePrice: 1999, price: 2199, category: "Windows Server" },
+  { id: 67, name: "Windows Server 2022 Standard (16 Core)", basePrice: 1999, price: 2599, category: "Windows Server" },
   { id: 68, name: "Windows Server 2022 Datacenter", basePrice: 2899, price: 3099, category: "Windows Server" },
-  { id: 69, name: "Windows Server 2022 User CALs (5 CALs)", basePrice: 1299, price: 1499, category: "Windows Server" }
+  { id: 69, name: "Windows Server 2022 User CALs (5 CALs)", basePrice: 1299, price: 1999, category: "Windows Server" }
 ];
 
 function renderProductCatalog() {
