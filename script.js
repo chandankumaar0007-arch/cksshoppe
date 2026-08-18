@@ -2,6 +2,35 @@ const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar"; 
 
 const products = [
+// ================= 📊 TALLY PRIME PLANS (NEW ADDED) =================
+  { 
+    id: 991, 
+    name: "Tally Prime 7.0 (Single User / 1 Year License)", 
+    price: 5699, 
+    category: "Business Software", 
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 992, 
+    name: "Tally Prime 7.0 Silver (Single User / Lifetime License)", 
+    price: 16000, 
+    category: "Business Software", 
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 993, 
+    name: "Tally Prime Gold (Multi User / 5 Users / 1 Year)", 
+    price: 9500, 
+    category: "Business Software", 
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 994, 
+    name: "Tally Prime Gold (Multi User / 5 Users / Lifetime)", 
+    price: 29000, 
+    category: "Business Software", 
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" 
+  },
   // ================= 📺 OTT PLATFORMS & ENTERTAINMENT =================
   { id: 601, name: "Discovery plus 4k / Premium", price: 169, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
   { id: 601, name: "Disney+ Hotstar Super / Premium", price: 149, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
