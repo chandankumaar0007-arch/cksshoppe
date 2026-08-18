@@ -1,5 +1,5 @@
-const WHATSAPP_NUMBER = "916200864464"; 
-const SELLER_NAME = "Chandan Kumar"; 
+const WHATSAPP_NUMBER = "916200864464";
+const SELLER_NAME = "Chandan Kumar";
 
 const products = [
   // ================= 📊 TALLY PRIME PLANS =================
@@ -155,12 +155,12 @@ const products = [
 function renderCatalog(items = products) {
   let grid = document.getElementById("ck-product-grid");
   if (!grid) {
-    const container = 
-      document.getElementById("products-container") || 
-      document.getElementById("product-grid") || 
+    const container =
+      document.getElementById("products-container") ||
+      document.getElementById("product-grid") ||
       document.getElementById("products") ||
       document.body;
-      
+
     grid = document.createElement("div");
     grid.id = "ck-product-grid";
     grid.style.cssText = "display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; padding: 20px 0; max-width: 1250px; margin: 0 auto;";
@@ -205,14 +205,14 @@ function handleSearch() {
   if (!searchInput) return;
 
   const query = searchInput.value.trim().toLowerCase();
-  
+
   if (query === "") {
     renderCatalog(products);
     return;
   }
 
-  const searchResults = products.filter(p => 
-    p.name.toLowerCase().includes(query) || 
+  const searchResults = products.filter(p =>
+    p.name.toLowerCase().includes(query) ||
     p.category.toLowerCase().includes(query)
   );
 
