@@ -81,15 +81,26 @@ function closeCart() {
   document.getElementById("cartModal").style.display = "none";
 }
 
+// WhatsApp Direct Checkout Function
 function checkout() {
   if (cart.length === 0) {
-    alert("Your cart is empty!");
+    alert("Aapka cart khaali hai!");
     return;
   }
-  alert("Order placed! Connect your WhatsApp or Payment Gateway for automatic processing.");
+
+  const phone = "916200864464";
+  const totalAmount = cart.reduce((sum, item) => sum + item.price, 0);
+  
+  let productList = cart.map((item, i) => `${i + 1}. ${item.name} - ₹${item.price}`).join("%0A");
+  
+  let msg = `*🛒 New Order - CKS Shoppe*%0A%0A` +
+            `*Items:*%0A${productList}%0A%0A` +
+            `*Total Amount:* ₹${totalAmount}%0A%0A` +
+            `Mujhe yeh software khareedna hai. Kripya payment link ya UPI QR code bhejein.`;
+
+  window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
 }
 
-// Initial Load
 document.addEventListener("DOMContentLoaded", () => {
   renderProducts(products);
 });
