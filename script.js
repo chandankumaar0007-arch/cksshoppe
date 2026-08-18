@@ -1,106 +1,135 @@
+const WHATSAPP_NUMBER = "916200864464"; 
+const SELLER_NAME = "Chandan Kumar"; 
+
 const products = [
-  { id: 1, name: "Windows 11 Pro", cat: "Windows", price: 699, oldPrice: 1999, icon: "🪟" },
-  { id: 2, name: "Windows 10 Pro", cat: "Windows", price: 499, oldPrice: 1499, icon: "🪟" },
-  { id: 3, name: "MS Office 2021 Pro Plus", cat: "Office", price: 999, oldPrice: 3499, icon: "📄" },
-  { id: 4, name: "MS Office 365 (1 Year)", cat: "Office", price: 1299, oldPrice: 4199, icon: "📄" },
-  { id: 5, name: "Quick Heal Total Security", cat: "Antivirus", price: 549, oldPrice: 1599, icon: "🛡️" },
-  { id: 6, name: "Guardian Total Security", cat: "Antivirus", price: 399, oldPrice: 1099, icon: "🛡️" },
-  { id: 7, name: "Internet Download Manager", cat: "Tools", price: 799, oldPrice: 1999, icon: "🧰" },
-  { id: 8, name: "Windows Server 2022", cat: "Windows", price: 1999, oldPrice: 5999, icon: "🪟" }
+  // ================= GUARDIAN =================
+  { id: 1, name: "Guardian NetSecure Antivirus (1 User / 1 Year)", basePrice: 180, price: 380, category: "Guardian" },
+  { id: 2, name: "Guardian NetSecure Antivirus (3 User / 1 Year)", basePrice: 420, price: 620, category: "Guardian" },
+  { id: 3, name: "Guardian NetSecure Antivirus (1 User / 3 Years)", basePrice: 410, price: 610, category: "Guardian" },
+  { id: 4, name: "Guardian Internet Security (1 User / 1 Year)", basePrice: 180, price: 380, category: "Guardian" },
+  { id: 5, name: "Guardian Internet Security (3 User / 1 Year)", basePrice: 450, price: 650, category: "Guardian" },
+  { id: 6, name: "Guardian Total Security (1 User / 1 Year)", basePrice: 295, price: 495, category: "Guardian" },
+  { id: 7, name: "Guardian Total Security (3 User / 1 Year)", basePrice: 699, price: 899, category: "Guardian" },
+  { id: 8, name: "Guardian Total Security (1 User / 3 Years)", basePrice: 650, price: 850, category: "Guardian" },
+
+  // ================= QUICK HEAL =================
+  { id: 9, name: "Quick Heal Pro Antivirus (1 User / 1 Year)", basePrice: 349, price: 549, category: "Quick Heal" },
+  { id: 10, name: "Quick Heal Pro Antivirus (2 User / 1 Year)", basePrice: 599, price: 799, category: "Quick Heal" },
+  { id: 11, name: "Quick Heal Pro Antivirus (3 User / 1 Year)", basePrice: 799, price: 999, category: "Quick Heal" },
+  { id: 12, name: "Quick Heal Pro Antivirus (1 User / 3 Years)", basePrice: 750, price: 950, category: "Quick Heal" },
+  { id: 13, name: "Quick Heal Internet Security (1 User / 1 Year)", basePrice: 450, price: 650, category: "Quick Heal" },
+  { id: 14, name: "Quick Heal Internet Security (3 User / 1 Year)", basePrice: 950, price: 1150, category: "Quick Heal" },
+  { id: 15, name: "Quick Heal Total Security (1 User / 1 Year)", basePrice: 799, price: 999, category: "Quick Heal" },
+  { id: 16, name: "Quick Heal Total Security (2 User / 1 Year)", basePrice: 1350, price: 1550, category: "Quick Heal" },
+  { id: 17, name: "Quick Heal Total Security (3 User / 1 Year)", basePrice: 1650, price: 1850, category: "Quick Heal" },
+  { id: 18, name: "Quick Heal Total Security (5 User / 1 Year)", basePrice: 2450, price: 2650, category: "Quick Heal" },
+  { id: 19, name: "Quick Heal Total Security (10 User / 1 Year)", basePrice: 4500, price: 4700, category: "Quick Heal" },
+  { id: 20, name: "Quick Heal Total Security (1 User / 3 Years)", basePrice: 1100, price: 1300, category: "Quick Heal" },
+  { id: 21, name: "Quick Heal Total Security (3 User / 3 Years)", basePrice: 2600, price: 2800, category: "Quick Heal" },
+
+  // ================= KASPERSKY =================
+  { id: 22, name: "Kaspersky Standard Antivirus (1 Device / 1 Year)", basePrice: 210, price: 410, category: "Kaspersky" },
+  { id: 23, name: "Kaspersky Standard Antivirus (3 Device / 1 Year)", basePrice: 499, price: 699, category: "Kaspersky" },
+  { id: 24, name: "Kaspersky Internet Security (1 User / 1 Year)", basePrice: 259, price: 459, category: "Kaspersky" },
+  { id: 25, name: "Kaspersky Internet Security (3 User / 1 Year)", basePrice: 599, price: 799, category: "Kaspersky" },
+  { id: 26, name: "Kaspersky Total Security (1 User / 1 Year)", basePrice: 450, price: 650, category: "Kaspersky" },
+  { id: 27, name: "Kaspersky Total Security (3 User / 1 Year)", basePrice: 850, price: 1050, category: "Kaspersky" },
+  { id: 28, name: "Kaspersky Plus (1 Device / 1 Year)", basePrice: 399, price: 599, category: "Kaspersky" },
+  { id: 29, name: "Kaspersky Premium (1 Device / 1 Year)", basePrice: 550, price: 750, category: "Kaspersky" },
+
+  // ================= K7 COMPUTING =================
+  { id: 30, name: "K7 Antivirus Premium (1 User / 1 Year)", basePrice: 190, price: 390, category: "K7 Security" },
+  { id: 31, name: "K7 Total Security (1 User / 1 Year)", basePrice: 270, price: 470, category: "K7 Security" },
+  { id: 32, name: "K7 Total Security (3 User / 1 Year)", basePrice: 580, price: 780, category: "K7 Security" },
+  { id: 33, name: "K7 Ultimate Security (1 User / 1 Year)", basePrice: 350, price: 550, category: "K7 Security" },
+
+  // ================= NET PROTECTOR (NPAV) =================
+  { id: 34, name: "Net Protector AntiVirus Pro (1 User / 1 Year)", basePrice: 220, price: 420, category: "Net Protector" },
+  { id: 35, name: "Net Protector Total Security (1 User / 1 Year)", basePrice: 380, price: 580, category: "Net Protector" },
+  { id: 36, name: "Net Protector Z-Security (1 User / 1 Year)", basePrice: 699, price: 899, category: "Net Protector" },
+  { id: 37, name: "Net Protector Total Security (3 User / 1 Year)", basePrice: 850, price: 1050, category: "Net Protector" },
+
+  // ================= BITDEFENDER & MCAFEE =================
+  { id: 38, name: "McAfee Antivirus (1 User / 1 Year)", basePrice: 275, price: 475, category: "McAfee" },
+  { id: 39, name: "McAfee Internet Security (1 User / 1 Year)", basePrice: 320, price: 520, category: "McAfee" },
+  { id: 40, name: "McAfee Total Protection (1 User / 1 Year)", basePrice: 420, price: 620, category: "McAfee" },
+  { id: 41, name: "McAfee Total Protection (3 User / 1 Year)", basePrice: 750, price: 950, category: "McAfee" },
+  { id: 42, name: "Bitdefender Total Security (1 Device / 1 Year)", basePrice: 399, price: 599, category: "Bitdefender" },
+  { id: 43, name: "Bitdefender Total Security (5 Devices / 1 Year)", basePrice: 899, price: 1099, category: "Bitdefender" },
+  { id: 44, name: "ESET NOD32 Antivirus (1 User / 1 Year)", basePrice: 299, price: 499, category: "ESET" },
+  { id: 45, name: "ESET Internet Security (1 User / 1 Year)", basePrice: 420, price: 620, category: "ESET" },
+
+  // ================= WINDOWS OPERATING SYSTEMS =================
+  { id: 46, name: "Microsoft Windows 10 Professional (OEM Key)", basePrice: 499, price: 699, category: "Windows OS" },
+  { id: 47, name: "Microsoft Windows 10 Professional (Retail Digital Key)", basePrice: 699, price: 899, category: "Windows OS" },
+  { id: 48, name: "Microsoft Windows 10 Home (Digital Key)", basePrice: 450, price: 650, category: "Windows OS" },
+  { id: 49, name: "Microsoft Windows 11 Professional (OEM Key)", basePrice: 599, price: 799, category: "Windows OS" },
+  { id: 50, name: "Microsoft Windows 11 Professional (Retail Digital Key)", basePrice: 799, price: 999, category: "Windows OS" },
+  { id: 51, name: "Microsoft Windows 11 Home (Digital License)", basePrice: 599, price: 799, category: "Windows OS" },
+
+  // ================= MICROSOFT OFFICE SUITES =================
+  { id: 52, name: "Microsoft Office 2016 Professional Plus (Lifetime)", basePrice: 699, price: 899, category: "MS Office" },
+  { id: 53, name: "Microsoft Office 2019 Professional Plus (Lifetime)", basePrice: 899, price: 1099, category: "MS Office" },
+  { id: 54, name: "Microsoft Office 2019 Home & Student (Bind Key)", basePrice: 1499, price: 1699, category: "MS Office" },
+  { id: 55, name: "Microsoft Office 2019 Home & Business (Mac/PC)", basePrice: 2199, price: 2399, category: "MS Office" },
+  { id: 56, name: "Microsoft Office 2021 Professional Plus (Lifetime)", basePrice: 1099, price: 1299, category: "MS Office" },
+  { id: 57, name: "Microsoft Office 2021 Home & Business (Mac/PC)", basePrice: 2499, price: 2699, category: "MS Office" },
+  { id: 58, name: "Microsoft 365 Personal (1 User / 1 Year Subscription)", basePrice: 2899, price: 3099, category: "MS Office" },
+  { id: 59, name: "Microsoft 365 Family (6 Users / 1 Year Subscription)", basePrice: 3899, price: 4099, category: "MS Office" },
+
+  // ================= PROJECT, VISIO & WINDOWS SERVERS =================
+  { id: 60, name: "Microsoft Project Professional 2019 Key", basePrice: 999, price: 1199, category: "MS Office" },
+  { id: 61, name: "Microsoft Project Professional 2021 Key", basePrice: 1199, price: 1399, category: "MS Office" },
+  { id: 62, name: "Microsoft Visio Professional 2019 Key", basePrice: 999, price: 1199, category: "MS Office" },
+  { id: 63, name: "Microsoft Visio Professional 2021 Key", basePrice: 1199, price: 1399, category: "MS Office" },
+  { id: 64, name: "Windows Server 2016 Standard (16 Core)", basePrice: 1499, price: 1699, category: "Windows Server" },
+  { id: 65, name: "Windows Server 2019 Standard (16 Core)", basePrice: 1799, price: 1999, category: "Windows Server" },
+  { id: 66, name: "Windows Server 2019 Datacenter", basePrice: 2499, price: 2699, category: "Windows Server" },
+  { id: 67, name: "Windows Server 2022 Standard (16 Core)", basePrice: 1999, price: 2199, category: "Windows Server" },
+  { id: 68, name: "Windows Server 2022 Datacenter", basePrice: 2899, price: 3099, category: "Windows Server" },
+  { id: 69, name: "Windows Server 2022 User CALs (5 CALs)", basePrice: 1299, price: 1499, category: "Windows Server" }
 ];
 
-let cart = [];
+function renderProductCatalog() {
+  const container = 
+    document.getElementById("products-container") || 
+    document.getElementById("product-grid") || 
+    document.getElementById("products") ||
+    document.querySelector(".products") ||
+    document.body;
 
-function renderProducts(items) {
-  const grid = document.getElementById("productGrid");
-  if (!grid) return;
-  grid.innerHTML = items.map(p => `
-    <div class="product">
-      <div class="icon">${p.icon}</div>
-      <h3>${p.name}</h3>
-      <div class="muted">${p.cat}</div>
-      <div class="price">₹${p.price} <span class="old">₹${p.oldPrice}</span></div>
-      <button onclick="addToCart(${p.id})">Add to Cart</button>
-    </div>
-  `).join("");
-}
-
-function filterCat(cat) {
-  if (cat === "All") {
-    renderProducts(products);
-  } else {
-    const filtered = products.filter(p => p.cat.toLowerCase() === cat.toLowerCase());
-    renderProducts(filtered);
+  let grid = document.getElementById("ck-product-grid");
+  if (!grid) {
+    grid = document.createElement("div");
+    grid.id = "ck-product-grid";
+    grid.style.cssText = "display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; padding: 20px; max-width: 1250px; margin: 0 auto; font-family: 'Segoe UI', Arial, sans-serif;";
+    container.appendChild(grid);
   }
-}
 
-function searchProducts() {
-  const query = document.getElementById("search").value.toLowerCase();
-  const filtered = products.filter(p => p.name.toLowerCase().includes(query) || p.cat.toLowerCase().includes(query));
-  renderProducts(filtered);
-}
-
-function addToCart(id) {
-  const item = products.find(p => p.id === id);
-  if (item) {
-    cart.push(item);
-    updateCart();
-  }
-}
-
-function updateCart() {
-  document.getElementById("cartCount").innerText = cart.length;
-  const cartItems = document.getElementById("cartItems");
-  const total = document.getElementById("total");
-  
-  if (cartItems) {
-    cartItems.innerHTML = cart.map((item, index) => `
-      <div class="cartrow">
-        <span>${item.name}</span>
-        <span>₹${item.price} <b style="cursor:pointer;color:red;margin-left:8px;" onclick="removeFromCart(${index})">✕</b></span>
+  grid.innerHTML = products.map(item => `
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.08);">
+      <div>
+        <span style="background: #e0f2fe; color: #0369a1; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 20px; display: inline-block; margin-bottom: 10px; text-transform: uppercase;">${item.category}</span>
+        <h3 style="font-size: 15px; color: #1e293b; margin: 0 0 10px 0; font-weight: 600; line-height: 1.4; min-height: 42px;">${item.name}</h3>
       </div>
-    `).join("");
-  }
-  
-  if (total) {
-    const sum = cart.reduce((acc, curr) => acc + curr.price, 0);
-    total.innerText = sum;
-  }
+      <div>
+        <div style="margin: 12px 0;">
+          <span style="color: #94a3b8; font-size: 13px; text-decoration: line-through;">M.R.P: ₹${item.price + 500}</span>
+          <div style="font-size: 22px; font-weight: 700; color: #059669; margin-top: 2px;">₹${item.price}</div>
+          <span style="color: #10b981; font-size: 11px; font-weight: 600;">⚡ Instant Digital License</span>
+        </div>
+        <button onclick="orderProduct('${item.name.replace(/'/g, "\\'")}', ${item.price})" style="background: #25D366; color: white; border: none; width: 100%; padding: 10px; font-size: 14px; font-weight: 600; border-radius: 8px; cursor: pointer;">
+          Order from Chandan
+        </button>
+      </div>
+    </div>
+  `).join('');
 }
 
-function removeFromCart(index) {
-  cart.splice(index, 1);
-  updateCart();
+function orderProduct(productName, price) {
+  const text = `Hello ${SELLER_NAME},\n\nI want to buy:\nProduct: *${productName}*\nPrice: *₹${price}*\n\nPlease provide payment details and delivery.`;
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank");
 }
 
-function openCart() {
-  document.getElementById("cartModal").style.display = "flex";
-}
-
-function closeCart() {
-  document.getElementById("cartModal").style.display = "none";
-}
-
-// WhatsApp Direct Checkout Function
-function checkout() {
-  if (cart.length === 0) {
-    alert("Aapka cart khaali hai!");
-    return;
-  }
-
-  const phone = "916200864464";
-  const totalAmount = cart.reduce((sum, item) => sum + item.price, 0);
-  
-  let productList = cart.map((item, i) => `${i + 1}. ${item.name} - ₹${item.price}`).join("%0A");
-  
-  let msg = `*🛒 New Order - CKS Shoppe*%0A%0A` +
-            `*Items:*%0A${productList}%0A%0A` +
-            `*Total Amount:* ₹${totalAmount}%0A%0A` +
-            `Mujhe yeh software khareedna hai. Kripya payment link ya UPI QR code bhejein.`;
-
-  window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  renderProducts(products);
-});
+document.addEventListener("DOMContentLoaded", renderProductCatalog);
