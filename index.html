@@ -1,224 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>CKS Shoppe | Premium Software & Digital Products</title>
-
-  <meta name="description"
-        content="CKS Shoppe - Premium software, digital products, antivirus, productivity tools and more.">
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CKS Shoppe — Software & Digital Products</title>
+<meta name="description" content="CKS Shoppe — Windows, Office, Antivirus and digital products at great prices.">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header>
+  <div class="top">🔥 CKS Shoppe — Genuine Digital Products • Fast Delivery • WhatsApp Support</div>
+  <nav class="nav">
+    <a class="logo" href="#">CKS <span>SHOPPE</span></a>
+    <div class="search"><input id="search" placeholder="Search Windows, Office, Antivirus..."><button onclick="searchProducts()">Search</button></div>
+    <div class="navlinks"><a href="#products">Products</a><a href="#categories">Categories</a><a href="#contact">Contact</a><button class="cart" onclick="openCart()">🛒 Cart <b id="cartCount">0</b></button></div>
+  </nav>
+</header>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container nav">
-
-      <div class="logo">
-        <span>CKS</span> Shoppe
-      </div>
-
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#categories">Categories</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button class="cart-btn" onclick="openCart()">
-        🛒 Cart <span id="cartCount">0</span>
-      </button>
-
-    </div>
-  </header>
-
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container hero-content">
-
-      <div>
-        <p class="small-title">WELCOME TO CKS SHOPPE</p>
-
-        <h1>
-          Premium Software &
-          <span>Digital Products</span>
-        </h1>
-
-        <p class="hero-text">
-          Genuine digital products, software, security tools
-          and productivity solutions at affordable prices.
-        </p>
-
-        <a href="#products" class="main-btn">
-          Explore Products →
-        </a>
-      </div>
-
-      <div class="hero-card">
-        <div class="hero-icon">💻</div>
-        <h3>Digital Store</h3>
-        <p>Fast • Secure • Easy</p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- SEARCH -->
-  <section class="search-section">
-    <div class="container">
-
-      <input
-        type="search"
-        id="searchBox"
-        placeholder="🔍 Search products..."
-        oninput="searchProducts()"
-      >
-
-    </div>
-  </section>
-
-
-  <!-- CATEGORIES -->
-  <section id="categories" class="categories">
-    <div class="container">
-
-      <h2>Shop by Category</h2>
-
-      <div class="category-buttons">
-        <button onclick="filterCategory('All')">All</button>
-        <button onclick="filterCategory('Windows')">Windows</button>
-        <button onclick="filterCategory('Office')">Office</button>
-        <button onclick="filterCategory('Antivirus')">Antivirus</button>
-        <button onclick="filterCategory('Tools')">Tools</button>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- PRODUCTS -->
-  <section id="products" class="products-section">
-    <div class="container">
-
-      <div class="section-title">
-        <p>OUR PRODUCTS</p>
-        <h2>Popular Digital Products</h2>
-      </div>
-
-      <div id="productGrid" class="product-grid"></div>
-
-    </div>
-  </section>
-
-
-  <!-- WHY CKS SHOPPE -->
-  <section class="why-us">
-    <div class="container">
-
-      <h2>Why Choose CKS Shoppe?</h2>
-
-      <div class="features">
-
-        <div class="feature">
-          <div>🔐</div>
-          <h3>Secure</h3>
-          <p>Safe and reliable digital purchasing experience.</p>
-        </div>
-
-        <div class="feature">
-          <div>⚡</div>
-          <h3>Fast Delivery</h3>
-          <p>Digital products can be delivered quickly after payment.</p>
-        </div>
-
-        <div class="feature">
-          <div>💰</div>
-          <h3>Affordable</h3>
-          <p>Competitive prices for software and digital products.</p>
-        </div>
-
-        <div class="feature">
-          <div>📞</div>
-          <h3>Support</h3>
-          <p>Get assistance whenever you need help.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <h2>Need Help?</h2>
-
-      <p>
-        Contact CKS Shoppe for product information and orders.
-      </p>
-
-      <a
-        href="https://wa.me/916200864464"
-        target="_blank"
-        class="whatsapp-btn">
-        💬 Chat on WhatsApp
-      </a>
-
-    </div>
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-
-      <h3>CKS Shoppe</h3>
-
-      <p>
-        Premium Software & Digital Products Store
-      </p>
-
-      <p class="copyright">
-        © 2026 CKS Shoppe. All Rights Reserved.
-      </p>
-
-    </div>
-  </footer>
-
-
-  <!-- CART -->
-  <div id="cartModal" class="cart-modal">
-
-    <div class="cart-box">
-
-      <button class="close-cart" onclick="closeCart()">×</button>
-
-      <h2>🛒 Your Cart</h2>
-
-      <div id="cartItems"></div>
-
-      <div class="cart-total">
-        Total: ₹<span id="cartTotal">0</span>
-      </div>
-
-      <button class="order-btn" onclick="orderOnWhatsApp()">
-        Order on WhatsApp
-      </button>
-
-    </div>
-
+<section class="hero">
+  <div>
+    <p class="eyebrow">CKS SHOPPE</p>
+    <h1>Premium Software.<br><span>Better Prices.</span></h1>
+    <p class="sub">Windows, Microsoft Office, Antivirus and other digital products — delivered quickly after payment.</p>
+    <a class="btn" href="#products">Shop Now →</a>
   </div>
+  <div class="hero-card"><div class="badge">BEST VALUE</div><h3>Windows + Office</h3><p>Digital activation products</p><strong>From ₹499</strong></div>
+</section>
 
+<section class="trust">
+  <div>⚡ <b>Instant Delivery</b><small>Digital products</small></div>
+  <div>🔒 <b>Secure Payment</b><small>Protected checkout</small></div>
+  <div>💬 <b>WhatsApp Support</b><small>Quick assistance</small></div>
+  <div>🧾 <b>GST Invoice</b><small>For eligible orders</small></div>
+</section>
 
-  <script src="script.js"></script>
+<section id="categories" class="section">
+  <div class="section-head"><h2>Shop by Category</h2></div>
+  <div class="cats">
+    <button onclick="filterCat('Windows')">🪟 Windows</button>
+    <button onclick="filterCat('Office')">📄 Microsoft Office</button>
+    <button onclick="filterCat('Antivirus')">🛡️ Antivirus</button>
+    <button onclick="filterCat('Tools')">🧰 Utilities</button>
+  </div>
+</section>
 
+<section id="products" class="section">
+  <div class="section-head"><h2>Featured Products</h2><button class="clear" onclick="filterCat('All')">View All</button></div>
+  <div id="productGrid" class="grid"></div>
+</section>
+
+<section class="deal">
+  <div><p class="eyebrow">LIMITED DEALS</p><h2>Upgrade your PC without overspending.</h2><p>Build your digital software collection with CKS Shoppe.</p></div>
+  <a class="btn light" href="#products">Explore Deals</a>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Need Help?</h2>
+  <p>Contact CKS Shoppe for product selection, activation support and order assistance.</p>
+  <a class="btn" href="https://wa.me/916200864464" target="_blank">WhatsApp Us</a>
+</section>
+
+<footer><div><b>CKS SHOPPE</b><p>Software & Digital Products</p></div><div><b>Quick Links</b><p><a href="#products">Products</a> · <a href="#contact">Support</a></p></div><div><b>Support</b><p>Chat with us on WhatsApp for fast license delivery and queries.</p></div><div class="copy">© 2026 CKS Shoppe. All rights reserved.</div></footer>
+
+<div id="cartModal" class="modal"><div class="modalbox"><button class="x" onclick="closeCart()">×</button><h2>Your Cart</h2><div id="cartItems"></div><div class="total">Total: ₹<span id="total">0</span></div><button class="btn full" onclick="checkout()">Proceed to Checkout</button></div></div>
+<script src="script.js"></script>
 </body>
 </html>
