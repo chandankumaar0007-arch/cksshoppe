@@ -5,7 +5,7 @@ const products = [
   // ================= 3D DESIGN TOOLS FOR MAC (NEW ADDED) =================
   { id: 211, name: "AutoCAD (For Mac)", price: 2899, category: "Mac Software", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
   { id: 212, name: "Revit (For Mac / Parallels Supported)", price: 2899, category: "Mac Software", image: "https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?w=400&auto=format&fit=crop&q=60" },
-  { id: 213, name: "Civil 3D (For Mac / Parallels Supported)", price: 1499, category: "Mac Software", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&auto=format&fit=crop&q=60" },
+  { id: 213, name: "Civil 3D (For Mac / Parallels Supported)", price: 2899, category: "Mac Software", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&auto=format&fit=crop&q=60" },
   { id: 214, name: "Navisworks Manage (For Mac Setup)", price: 3599, category: "Mac Software", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&auto=format&fit=crop&q=60" },
   { id: 215, name: "3ds Max (For Mac Setup)", price: 4599, category: "Mac Software", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
   { id: 216, name: "Recap Pro (For Mac)", price: 2899, category: "Mac Software", image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&auto=format&fit=crop&q=60" },
