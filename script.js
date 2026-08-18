@@ -2,6 +2,63 @@ const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar"; 
 
 const products = [
+// ================= MACBOOK & macOS SOFTWARES (NEW) =================
+  { 
+    id: 201, 
+    name: "Microsoft Office 2021 Home & Business (For Mac)", 
+    price: 2699, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 202, 
+    name: "Microsoft Office 2019 Home & Business (For Mac)", 
+    price: 2399, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 203, 
+    name: "CleanMyMac X (Lifetime License for macOS)", 
+    price: 1499, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 204, 
+    name: "Parallels Desktop Pro (Run Windows on Mac)", 
+    price: 2099, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 205, 
+    name: "Final Cut Pro (Apple Mac Video Editing)", 
+    price: 2599, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 206, 
+    name: "Logic Pro (Mac Music & Audio Production)", 
+    price: 1999, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 207, 
+    name: "Kaspersky Standard Security (For Mac / 1 Year)", 
+    price: 799, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&auto=format&fit=crop&q=60" 
+  },
+  { 
+    id: 208, 
+    name: "Quick Heal Total Security (For Mac / 1 Year)", 
+    price: 1499, 
+    category: "Mac Software", 
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&auto=format&fit=crop&q=60" 
+  },
   // ================= GUARDIAN =================
   { id: 1, name: "Guardian NetSecure Antivirus (1 User / 1 Year)", basePrice: 180, price: 380, category: "Guardian" },
   { id: 2, name: "Guardian NetSecure Antivirus (3 User / 1 Year)", basePrice: 420, price: 620, category: "Guardian" },
