@@ -2,6 +2,40 @@ const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar"; 
 
 const products = [
+  // ================= 📺 OTT PLATFORMS & ENTERTAINMENT =================
+  { id: 601, name: "Disney+ Hotstar Super / Premium", price: 149, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
+  { id: 602, name: "Disney+ Hotstar 4K Ultra HD", price: 249, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
+  { id: 603, name: "Sony LIV Premium Subscription", price: 149, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&auto=format&fit=crop&q=60" },
+  { id: 604, name: "ZEE5 Premium All Access", price: 119, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&auto=format&fit=crop&q=60" },
+  { id: 605, name: "Amazon Prime Video Subscription", price: 179, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
+  { id: 606, name: "Netflix UHD 4K (Private Profile)", price: 199, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
+  { id: 607, name: "HOICHOI Premium Subscription", price: 149, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&auto=format&fit=crop&q=60" },
+  { id: 608, name: "YouTube Premium (Ad-Free & Background Play)", price: 149, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&auto=format&fit=crop&q=60" },
+  { id: 609, name: "Aha Gold Premium", price: 169, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&auto=format&fit=crop&q=60" },
+  { id: 610, name: "Sun NXT Premium Subscription", price: 129, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&auto=format&fit=crop&q=60" },
+  { id: 611, name: "ETV Win Premium", price: 119, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&auto=format&fit=crop&q=60" },
+  { id: 612, name: "Apple TV+ Subscription", price: 199, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
+
+  // ================= 🤖 AI & PRODUCTIVITY =================
+  { id: 701, name: "ChatGPT Plus (GPT-4o Access)", price: 699, category: "AI & Productivity", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&auto=format&fit=crop&q=60" },
+  { id: 702, name: "Google Gemini Advanced", price: 1099, category: "AI & Productivity", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 703, name: "Lovable AI Subscription", price: 999, category: "AI & Productivity", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&auto=format&fit=crop&q=60" },
+  { id: 704, name: "Canva Pro / Premium (Lifetime/1 Year)", price: 799, category: "AI & Productivity", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
+  { id: 705, name: "Adobe Creative Cloud (All Apps)", price: 1999, category: "AI & Productivity", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
+
+  // ================= 🎵 MUSIC PREMIUM =================
+  { id: 801, name: "Spotify Premium Individual", price: 99, category: "Music Premium", image: "https://images.unsplash.com/photo-1614680376593-902f749f7ffc?w=400&auto=format&fit=crop&q=60" },
+  { id: 802, name: "YouTube Music Premium", price: 99, category: "Music Premium", image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=60" },
+  { id: 803, name: "JioSaavn Pro Premium", price: 99, category: "Music Premium", image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=60" },
+  { id: 804, name: "Apple Music Individual Subscription", price: 119, category: "Music Premium", image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=60" },
+
+  // ================= 🎓 LEARNING PLATFORMS =================
+  { id: 901, name: "Coursera Plus Subscription", price: 699, category: "Learning Platforms", image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&auto=format&fit=crop&q=60" },
+  { id: 902, name: "edX Courses Verified Access", price: 599, category: "Learning Platforms", image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&auto=format&fit=crop&q=60" },
+
+  // ================= 📈 SOCIAL MEDIA SERVICES =================
+  { id: 951, name: "Instagram Followers Package (Real Active)", price: 399, category: "Social Media Services", image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&auto=format&fit=crop&q=60" },
+  { id: 952, name: "Instagram Likes & Views Boost", price: 99, category: "Social Media Services", image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&auto=format&fit=crop&q=60" },
   // ================= 3D DESIGN TOOLS FOR MAC (NEW ADDED) =================
   { id: 211, name: "AutoCAD (For Mac)", price: 2899, category: "Mac Software", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
   { id: 212, name: "Revit (For Mac / Parallels Supported)", price: 2899, category: "Mac Software", image: "https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?w=400&auto=format&fit=crop&q=60" },
