@@ -3,6 +3,7 @@ const SELLER_NAME = "Chandan Kumar";
 
 const products = [
   // ================= 📺 OTT PLATFORMS & ENTERTAINMENT =================
+  { id: 601, name: "Discovery plus 4k / Premium", price: 169, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
   { id: 601, name: "Disney+ Hotstar Super / Premium", price: 149, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
   { id: 602, name: "Disney+ Hotstar 4K Ultra HD", price: 249, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&auto=format&fit=crop&q=60" },
   { id: 603, name: "Sony LIV Premium Subscription", price: 149, category: "OTT & Entertainment", image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&auto=format&fit=crop&q=60" },
