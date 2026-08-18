@@ -122,11 +122,11 @@ const products = [
   { id: 14, name: "Quick Heal Internet Security (3 User / 1 Year)", basePrice: 950, price: 1150, category: "Quick Heal" },
   { id: 15, name: "Quick Heal Total Security (1 User / 1 Year)", basePrice: 799, price: 999, category: "Quick Heal" },
   { id: 16, name: "Quick Heal Total Security (2 User / 1 Year)", basePrice: 1350, price: 1780, category: "Quick Heal" },
-  { id: 17, name: "Quick Heal Total Security (3 User / 1 Year)", basePrice: 1650, price: 1850, category: "Quick Heal" },
-  { id: 18, name: "Quick Heal Total Security (5 User / 1 Year)", basePrice: 2450, price: 2650, category: "Quick Heal" },
-  { id: 19, name: "Quick Heal Total Security (10 User / 1 Year)", basePrice: 4500, price: 4700, category: "Quick Heal" },
-  { id: 20, name: "Quick Heal Total Security (1 User / 3 Years)", basePrice: 1100, price: 1580, category: "Quick Heal" },
-  { id: 21, name: "Quick Heal Total Security (3 User / 3 Years)", basePrice: 2600, price: 2800, category: "Quick Heal" },
+  { id: 17, name: "Quick Heal Total Security (3 User / 1 Year)", basePrice: 1650, price: 2880, category: "Quick Heal" },
+  { id: 18, name: "Quick Heal Total Security (5 User / 1 Year)", basePrice: 2450, price: 4499, category: "Quick Heal" },
+  { id: 19, name: "Quick Heal Total Security (10 User / 1 Year)", basePrice: 4500, price: 8999, category: "Quick Heal" },
+  { id: 20, name: "Quick Heal Total Security (1 User / 3 Years)", basePrice: 1100, price: 1680, category: "Quick Heal" },
+  { id: 21, name: "Quick Heal Total Security (3 User / 3 Years)", basePrice: 2600, price: 4499, category: "Quick Heal" },
 
   // ================= KASPERSKY =================
   { id: 22, name: "Kaspersky Standard Antivirus (1 Device / 1 Year)", basePrice: 210, price: 410, category: "Kaspersky" },
