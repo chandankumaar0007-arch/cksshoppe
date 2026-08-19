@@ -2,6 +2,14 @@ const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar";
 
 const products = [
+  // ================= 🎨 CREATIVE & EDITING SOFTWARE =================
+  { id: 1001, name: "Adobe 2026 Full Collection", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
+  { id: 1002, name: "OBS Studio", price: 1199, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1003, name: "Zoom Pro", price: 899, category: "Tools", image: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=400&auto=format&fit=crop&q=60" },
+  { id: 1004, name: "DaVinci Resolve Studio", price: 2399, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1005, name: "CorelDRAW 2026", price: 999, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1006, name: "SketchUp Pro", price: 2499, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1007, name: "Filmora", price: 799, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
   // ================= 📊 TALLY PRIME PLANS =================
   { id: 991, name: "Tally Prime 7.0 (Single User / 1 Year License)", price: 5699, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
   { id: 992, name: "Tally Prime 7.0 Silver (Single User / Lifetime License)", price: 16000, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
