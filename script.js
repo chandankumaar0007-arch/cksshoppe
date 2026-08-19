@@ -13,7 +13,8 @@ const products = [
   { id: 1108, name: "Balance Sheet Preparation", price: 2899, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
   { id: 1109, name: "Project Report Preparation", price: 2899, category: "Services", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
   { id: 1110, name: "Trademark (TM) Registration", price: 8999, category: "Services", image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=400&auto=format&fit=crop&q=60" },
-  { id: 1111, name: "Company Registration (Pvt Ltd / OPC / LLP)", price: 15999, category: "Services", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" }
+  { id: 1111, name: "Company Registration (Pvt Ltd / OPC / LLP)", price: 15999, category: "Services", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
+
   // ================= 🎨 CREATIVE & EDITING SOFTWARE =================
   { id: 1001, name: "Adobe 2026 Full Collection", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
   { id: 1002, name: "OBS Studio", price: 1199, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
@@ -22,6 +23,7 @@ const products = [
   { id: 1005, name: "CorelDRAW 2026", price: 999, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
   { id: 1006, name: "SketchUp Pro", price: 2499, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
   { id: 1007, name: "Filmora", price: 799, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
+
   // ================= 📊 TALLY PRIME PLANS =================
   { id: 991, name: "Tally Prime 7.0 (Single User / 1 Year License)", price: 5699, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
   { id: 992, name: "Tally Prime 7.0 Silver (Single User / Lifetime License)", price: 16000, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
@@ -71,7 +73,7 @@ const products = [
   { id: 218, name: "Infraworks (For Mac)", price: 2099, category: "Tools", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&auto=format&fit=crop&q=60" },
   { id: 201, name: "Microsoft Office 2021 Home & Business (For Mac)", price: 2699, category: "Office", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
   { id: 202, name: "Microsoft Office 2019 Home & Business (For Mac)", price: 2399, category: "Office", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
-  { id: 203, name: "CleanMyMac X (Lifetime License for macOS)", price: 1499, category: "Tools", image: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=400&auto=format&fit=crop&q=60" },
+  { id: 203, name: "CleanMyMac X (Lifetime License for macOS)", price: 1499, category: "Tools", image: "https://images.unsplash.com/photo-161186871348-b1ce696e52c9?w=400&auto=format&fit=crop&q=60" },
   { id: 204, name: "Parallels Desktop Pro (Run Windows on Mac)", price: 2099, category: "Tools", image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&auto=format&fit=crop&q=60" },
   { id: 205, name: "Final Cut Pro (Apple Mac Video Editing)", price: 2599, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
   { id: 206, name: "Logic Pro (Mac Music & Audio Production)", price: 1999, category: "Tools", image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&auto=format&fit=crop&q=60" },
