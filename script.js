@@ -24,7 +24,7 @@ const products = [
   { id: 612, name: "Apple TV+ Subscription", price: 199, category: "Tools", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
 
   // ================= 🤖 AI & PRODUCTIVITY =================
-  { id: 701, name: "ChatGPT Plus (GPT-4o Access)", price: 699, category: "Tools", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&auto=format&fit=crop&q=60" },
+  { id: 701, name: "ChatGPT Plus (GPT-4o Access)", price: 1499, category: "Tools", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&auto=format&fit=crop&q=60" },
   { id: 702, name: "Google Gemini Advanced", price: 1099, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
   { id: 703, name: "Lovable AI Subscription", price: 999, category: "Tools", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&auto=format&fit=crop&q=60" },
   { id: 704, name: "Canva Pro / Premium (Lifetime/1 Year)", price: 799, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
@@ -106,12 +106,12 @@ const products = [
   { id: 45, name: "ESET Internet Security (1 User / 1 Year)", price: 620, category: "Antivirus", image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&auto=format&fit=crop&q=60" },
 
   // ================= 🪟 WINDOWS OPERATING SYSTEMS =================
-  { id: 46, name: "Microsoft Windows 10 Professional (OEM Key)", price: 699, category: "Windows", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&auto=format&fit=crop&q=60" },
-  { id: 47, name: "Microsoft Windows 10 Professional (Retail Digital Key)", price: 899, category: "Windows", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&auto=format&fit=crop&q=60" },
-  { id: 48, name: "Microsoft Windows 10 Home (Digital Key)", price: 650, category: "Windows", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&auto=format&fit=crop&q=60" },
-  { id: 49, name: "Microsoft Windows 11 Professional (OEM Key)", price: 799, category: "Windows", image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&auto=format&fit=crop&q=60" },
-  { id: 50, name: "Microsoft Windows 11 Professional (Retail Digital Key)", price: 999, category: "Windows", image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&auto=format&fit=crop&q=60" },
-  { id: 51, name: "Microsoft Windows 11 Home (Digital License)", price: 799, category: "Windows", image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&auto=format&fit=crop&q=60" },
+  { id: 46, name: "Microsoft Windows 10 Professional (OEM Key)", price: 1099, category: "Windows", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&auto=format&fit=crop&q=60" },
+  { id: 47, name: "Microsoft Windows 10 Professional (Retail Digital Key)", price: 1099, category: "Windows", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&auto=format&fit=crop&q=60" },
+  { id: 48, name: "Microsoft Windows 10 Home (Digital Key)", price: 1099, category: "Windows", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&auto=format&fit=crop&q=60" },
+  { id: 49, name: "Microsoft Windows 11 Professional (OEM Key)", price: 1199, category: "Windows", image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&auto=format&fit=crop&q=60" },
+  { id: 50, name: "Microsoft Windows 11 Professional (Retail Digital Key)", price: 1199, category: "Windows", image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&auto=format&fit=crop&q=60" },
+  { id: 51, name: "Microsoft Windows 11 Home (Digital License)", price: 1199, category: "Windows", image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&auto=format&fit=crop&q=60" },
   { id: 64, name: "Windows Server 2016 Standard (16 Core)", price: 2599, category: "Windows", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&auto=format&fit=crop&q=60" },
   { id: 65, name: "Windows Server 2019 Standard (16 Core)", price: 2599, category: "Windows", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&auto=format&fit=crop&q=60" },
   { id: 66, name: "Windows Server 2019 Datacenter", price: 2699, category: "Windows", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&auto=format&fit=crop&q=60" },
@@ -120,7 +120,7 @@ const products = [
   { id: 69, name: "Windows Server 2022 User CALs (5 CALs)", price: 1999, category: "Windows", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&auto=format&fit=crop&q=60" },
 
   // ================= 📄 MICROSOFT OFFICE SUITES =================
-  { id: 52, name: "Microsoft Office 2016 Professional Plus (Lifetime)", price: 899, category: "Office", image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&auto=format&fit=crop&q=60" },
+  { id: 52, name: "Microsoft Office 2016 Professional Plus (Lifetime)", price: 999, category: "Office", image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&auto=format&fit=crop&q=60" },
   { id: 53, name: "Microsoft Office 2019 Professional Plus (Lifetime)", price: 1099, category: "Office", image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&auto=format&fit=crop&q=60" },
   { id: 54, name: "Microsoft Office 2019 Home & Student (Bind Key)", price: 1699, category: "Office", image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&auto=format&fit=crop&q=60" },
   { id: 55, name: "Microsoft Office 2019 Home & Business (Mac/PC)", price: 2399, category: "Office", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
