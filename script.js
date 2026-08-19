@@ -6,7 +6,7 @@ const products = [
   { id: 1101, name: "GST Registration", price: 999, category: "Services", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
   { id: 1102, name: "GST Return Filing", price: 699, category: "Services", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
   { id: 1103, name: "Income Tax Return (ITR) Filing", price: 999, category: "Services", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
-  { id: 1104, name: "MSME / Udyam Registration", price: 599, category: "Services", image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=400&auto=format&fit=crop&q=60" },
+  { id: 1104, name: "MSME / Udyam Registration", price: 999, category: "Services", image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=400&auto=format&fit=crop&q=60" },
   { id: 1105, name: "Food License (FSSAI Registration)", price: 1299, category: "Services", image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&auto=format&fit=crop&q=60" },
   { id: 1106, name: "Digital Signature Certificate (DSC Class 3)", price: 1599, category: "Services", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&auto=format&fit=crop&q=60" },
   { id: 1107, name: "IEC (Import Export Code) Registration", price: 2899, category: "Services", image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&auto=format&fit=crop&q=60" },
