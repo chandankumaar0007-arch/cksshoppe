@@ -2,6 +2,18 @@ const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar";
 
 const products = [
+  // ================= 📋 BUSINESS & TAX COMPLIANCE SERVICES =================
+  { id: 1101, name: "GST Registration", price: 999, category: "Services", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1102, name: "GST Return Filing", price: 699, category: "Services", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1103, name: "Income Tax Return (ITR) Filing", price: 999, category: "Services", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1104, name: "MSME / Udyam Registration", price: 599, category: "Services", image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=400&auto=format&fit=crop&q=60" },
+  { id: 1105, name: "Food License (FSSAI Registration)", price: 1299, category: "Services", image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&auto=format&fit=crop&q=60" },
+  { id: 1106, name: "Digital Signature Certificate (DSC Class 3)", price: 1599, category: "Services", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&auto=format&fit=crop&q=60" },
+  { id: 1107, name: "IEC (Import Export Code) Registration", price: 2899, category: "Services", image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1108, name: "Balance Sheet Preparation", price: 2899, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1109, name: "Project Report Preparation", price: 2899, category: "Services", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
+  { id: 1110, name: "Trademark (TM) Registration", price: 8999, category: "Services", image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=400&auto=format&fit=crop&q=60" },
+  { id: 1111, name: "Company Registration (Pvt Ltd / OPC / LLP)", price: 15999, category: "Services", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" }
   // ================= 🎨 CREATIVE & EDITING SOFTWARE =================
   { id: 1001, name: "Adobe 2026 Full Collection", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
   { id: 1002, name: "OBS Studio", price: 1199, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
