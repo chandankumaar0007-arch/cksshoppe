@@ -19,12 +19,9 @@
     <header>
         <nav class="nav">
             <a class="logo" href="#">CKS <span>SHOPPE</span></a>
-            <div class="search-wrapper">
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input id="search" type="text" placeholder="Search Windows, Office, Antivirus..." oninput="searchProducts()">
-                    <button id="clearSearchBtn" class="clear-input-btn" onclick="clearSearch()">✕</button>
-                </div>
+            <div class="search">
+                <input id="search" type="text" placeholder="Search Windows, Office, Antivirus..." onkeyup="searchProducts()">
+                <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
             </div>
             <div class="navlinks">
                 <a href="#products">Products</a>
@@ -37,40 +34,40 @@
         </nav>
     </header>
 
-    <!-- Hero Banner Section with 3D Depth -->
+    <!-- Hero Banner Section -->
     <section class="hero">
-        <div class="hero-text">
+        <div>
             <p class="eyebrow">⚡ Instant Digital Delivery</p>
             <h1>Premium Software.<br><span>Unbeatable Prices.</span></h1>
             <p class="sub">Get genuine product keys for Windows, MS Office, Antivirus, and utilities. Fast delivery directly via WhatsApp after payment.</p>
             <a class="btn" href="#products">Shop Best Deals →</a>
         </div>
-        <div class="hero-card tilt-element">
+        <div class="hero-card">
             <div class="badge">🔥 TOP SELLER COMBO</div>
             <h3>Windows 11 + Office 2021</h3>
             <p>Lifetime Genuine Activation</p>
             <strong>₹1,499</strong>
-            <div style="margin-top: 20px;">
-                <button class="btn" style="padding: 12px 22px; font-size: 14px; width: 100%;" onclick="buyDirect('Windows 11 + Office 2021 Combo', 1499)">Order Now</button>
+            <div style="margin-top: 15px;">
+                <a class="btn" style="padding: 10px 18px; font-size: 13px;" href="https://wa.me/916200864464?text=Hi,%20I%20want%20the%20Win11+Office2021%20combo%20deal" target="_blank">Order Now</a>
             </div>
         </div>
     </section>
 
     <!-- Trust Highlights -->
     <section class="trust">
-        <div class="tilt-element">
+        <div>
             <b>⚡ Instant Delivery</b>
             <small>Direct activation key on WhatsApp</small>
         </div>
-        <div class="tilt-element">
+        <div>
             <b>🔒 100% Genuine</b>
             <small>Guaranteed authentic software</small>
         </div>
-        <div class="tilt-element">
+        <div>
             <b>💬 Fast Support</b>
             <small>Installation & activation assistance</small>
         </div>
-        <div class="tilt-element">
+        <div>
             <b>💳 Easy Payment</b>
             <small>Instant UPI / QR Code transfer</small>
         </div>
@@ -82,40 +79,36 @@
             <h2>Explore Categories</h2>
         </div>
         <div class="cats">
-            <button class="cat-btn active" onclick="filterCat('All', this)">🌟 All</button>
-            <button class="cat-btn" onclick="filterCat('Windows', this)">🪟 Windows OS</button>
-            <button class="cat-btn" onclick="filterCat('Office', this)">📄 MS Office</button>
-            <button class="cat-btn" onclick="filterCat('Antivirus', this)">🛡️ Antivirus</button>
-            <button class="cat-btn" onclick="filterCat('Tools', this)">🧰 Utilities</button>
+            <button onclick="filterCat('Windows')">🪟 Windows OS</button>
+            <button onclick="filterCat('Office')">📄 MS Office</button>
+            <button onclick="filterCat('Antivirus')">🛡️ Antivirus</button>
+            <button onclick="filterCat('Tools')">🧰 Utilities</button>
         </div>
     </section>
 
     <!-- Products Grid Section -->
     <section id="products" class="section">
         <div class="section-head">
-            <div>
-                <h2>Featured Products</h2>
-                <div id="searchFeedback" class="search-feedback"></div>
-            </div>
+            <h2>Featured Products</h2>
             <button class="clear" onclick="filterCat('All')">View All Products →</button>
         </div>
         <div id="productGrid" class="grid"></div>
     </section>
 
     <!-- Special Offer Banner -->
-    <section class="deal tilt-element">
+    <section class="deal">
         <div>
-            <p class="eyebrow" style="color: #93c5fd;">EXCLUSIVE PROMOTION</p>
+            <p class="eyebrow" style="color: #cbd5e1;">EXCLUSIVE PROMOTION</p>
             <h2>Upgrade Your PC with Genuine Software</h2>
             <p>Direct support and easy setup instructions sent right to your chat.</p>
         </div>
-        <a class="btn light" href="https://wa.me/916200864464?text=Hi%20Chandan%20Ji,%20I%20want%20to%20know%20about%20exclusive%20deals." target="_blank">Chat with Us</a>
+        <a class="btn light" href="https://wa.me/916200864464" target="_blank">Chat with Us</a>
     </section>
 
     <!-- Contact & Support Section -->
     <section id="contact" class="section contact">
         <h2>Need Any Help?</h2>
-        <p>Have questions about compatibility, product keys, or setup? Connect directly with Chandan Ji.</p>
+        <p>Have questions about compatibility, product keys, or setup? Connect with us directly.</p>
         <a class="btn" href="https://wa.me/916200864464" target="_blank">
             <i class="fa-brands fa-whatsapp"></i> WhatsApp Support (+91 6200864464)
         </a>
