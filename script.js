@@ -1,7 +1,39 @@
 const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar";
 
-const products = [// ================= 🎨 COMPLETE ADOBE SUITE =================
+const products = [Yeh raha aapki Architecture aur 3D Design software list ka ready-to-use JavaScript array format (mixed pricing: ₹2799, ₹2899, ₹2999, ₹3199, ₹3599 ke saath):
+
+```javascript
+  // ================= 🏛️ ARCHITECTURE & DESIGN SOFTWARE =================
+  { id: 1401, name: "Autodesk Revit", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1402, name: "Graphisoft Archicad", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1403, name: "Vectorworks Architect", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1404, name: "Allplan", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1405, name: "Autodesk AutoCAD", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1406, name: "AutoCAD Architecture", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1407, name: "Chief Architect", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1408, name: "DraftSight", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1409, name: "Trimble SketchUp Pro", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1410, name: "Rhino 3D (Rhinoceros)", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1411, name: "Grasshopper", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1412, name: "Autodesk 3ds Max", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1413, name: "Blender", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1414, name: "Lumion", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1415, name: "Twinmotion", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1416, name: "Enscape", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1417, name: "Chaos V-Ray", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1418, name: "Chaos Corona", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1419, name: "D5 Render", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1420, name: "Autodesk Civil 3D", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&auto=format&fit=crop&q=60" },
+  { id: 1421, name: "Autodesk InfraWorks", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&auto=format&fit=crop&q=60" },
+  { id: 1422, name: "Autodesk Forma", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
+  { id: 1423, name: "ArcGIS CityEngine", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
+  { id: 1424, name: "Floorplanner", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1425, name: "Planner 5D", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1426, name: "RoomSketcher", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+
+```
+  // ================= 🎨 COMPLETE ADOBE SUITE =================
   { id: 1301, name: "Adobe Photoshop", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
   { id: 1302, name: "Adobe Illustrator", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
   { id: 1303, name: "Adobe Lightroom", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
