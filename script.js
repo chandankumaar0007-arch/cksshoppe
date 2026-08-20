@@ -1,6 +1,8 @@
+// ================= ⚙️ CONFIGURATION =================
 const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar";
 
+// ================= 📦 PRODUCTS DATA =================
 const products = [
   // ================= 🏛️ ARCHITECTURE & DESIGN SOFTWARE =================
   { id: 1401, name: "Autodesk Revit", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
@@ -147,7 +149,7 @@ const products = [
   { id: 201, name: "Microsoft Office 2021 Home & Business (For Mac)", price: 2699, category: "Office", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
   { id: 202, name: "Microsoft Office 2019 Home & Business (For Mac)", price: 2399, category: "Office", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
   { id: 203, name: "CleanMyMac X (Lifetime License for macOS)", price: 1499, category: "Tools", image: "https://images.unsplash.com/photo-161186871348-b1ce696e52c9?w=400&auto=format&fit=crop&q=60" },
-  { id: 204, name: "Parallels Desktop Pro (Run Windows on Mac)", price: 2099, category: "Tools", image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&auto=format&fit=crop&q=60" },
+  { id: 204, name: "Parallels Desktop Pro (Run Windows on Mac)", price: 2099, category: "Tools", image: "https://images.unsplash.com/photo-1527443224155-c4a3942d3acf?w=400&auto=format&fit=crop&q=60" },
   { id: 205, name: "Final Cut Pro (Apple Mac Video Editing)", price: 2599, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
   { id: 206, name: "Logic Pro (Mac Music & Audio Production)", price: 1999, category: "Tools", image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&auto=format&fit=crop&q=60" },
   { id: 207, name: "Kaspersky Standard Security (For Mac / 1 Year)", price: 799, category: "Antivirus", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&auto=format&fit=crop&q=60" },
@@ -228,3 +230,67 @@ const products = [
   { id: 62, name: "Microsoft Visio Professional 2019 Key", price: 1499, category: "Office", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
   { id: 63, name: "Microsoft Visio Professional 2021 Key", price: 1399, category: "Office", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" }
 ];
+
+// ================= 🚀 UI LOGIC & FUNCTIONS =================
+
+// WhatsApp link generator
+function createWhatsAppLink(productName, productPrice) {
+  const message = `Hello ${SELLER_NAME}, I want to buy:\n- Product: ${productName}\n- Price: ₹${productPrice}\nPlease share payment details.`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
+// Function to render products
+function renderProducts(productList) {
+  const container = document.getElementById("product-container");
+  if (!container) return;
+
+  if (productList.length === 0) {
+    container.innerHTML = `<p style="text-align: center; width: 100%;">No products found.</p>`;
+    return;
+  }
+
+  container.innerHTML = productList.map(item => `
+    <div class="product-card" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; margin: 10px; width: 260px; display: inline-block; vertical-align: top; box-shadow: 0 2px 6px rgba(0,0,0,0.08); font-family: sans-serif;">
+      <img src="${item.image}" alt="${item.name}" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;" loading="lazy" />
+      <h3 style="font-size: 16px; margin: 12px 0 6px 0; min-height: 40px;">${item.name}</h3>
+      <p style="color: #666; font-size: 13px; margin: 0 0 8px 0;">Category: <b>${item.category}</b></p>
+      <div style="font-size: 18px; font-weight: bold; color: #2e7d32; margin-bottom: 12px;">₹${item.price.toLocaleString("en-IN")}</div>
+      <a href="${createWhatsAppLink(item.name, item.price)}" target="_blank" style="display: block; text-align: center; background-color: #25D366; color: white; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold;">
+        Buy on WhatsApp
+      </a>
+    </div>
+  `).join("");
+}
+
+// Function to filter by category
+function filterCategory(category) {
+  if (category === "All") {
+    renderProducts(products);
+  } else {
+    const filtered = products.filter(p => p.category.toLowerCase() === category.toLowerCase());
+    renderProducts(filtered);
+  }
+}
+
+// Function to handle search
+function searchProducts(query) {
+  const searchTerm = query.toLowerCase().trim();
+  const filtered = products.filter(p => 
+    p.name.toLowerCase().includes(searchTerm) || 
+    p.category.toLowerCase().includes(searchTerm)
+  );
+  renderProducts(filtered);
+}
+
+// ================= 🏁 INITIALIZATION =================
+document.addEventListener("DOMContentLoaded", () => {
+  renderProducts(products);
+
+  // Search input listener (agar search box HTML me hai)
+  const searchInput = document.getElementById("search-input");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      searchProducts(e.target.value);
+    });
+  }
+});
