@@ -1,81 +1,78 @@
-// ================= ⚙️ CONFIGURATION =================
 const WHATSAPP_NUMBER = "916200864464";
 const SELLER_NAME = "Chandan Kumar";
 
-// ================= 📦 PRODUCTS DATA =================
 const products = [
-  // ================= 🏛️ ARCHITECTURE & DESIGN SOFTWARE =================
-  { id: 1401, name: "Autodesk Revit", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1402, name: "Graphisoft Archicad", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1403, name: "Vectorworks Architect", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1404, name: "Allplan", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1405, name: "Autodesk AutoCAD", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1406, name: "AutoCAD Architecture", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1407, name: "Chief Architect", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1408, name: "DraftSight", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1409, name: "Trimble SketchUp Pro", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1410, name: "Rhino 3D (Rhinoceros)", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1411, name: "Grasshopper", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1412, name: "Autodesk 3ds Max", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1413, name: "Blender", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1414, name: "Lumion", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1415, name: "Twinmotion", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1416, name: "Enscape", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1417, name: "Chaos V-Ray", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1418, name: "Chaos Corona", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1419, name: "D5 Render", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1420, name: "Autodesk Civil 3D", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&auto=format&fit=crop&q=60" },
-  { id: 1421, name: "Autodesk InfraWorks", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&auto=format&fit=crop&q=60" },
-  { id: 1422, name: "Autodesk Forma", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
-  { id: 1423, name: "ArcGIS CityEngine", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
-  { id: 1424, name: "Floorplanner", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1425, name: "Planner 5D", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-  { id: 1426, name: "RoomSketcher", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
-
   // ================= 🎨 COMPLETE ADOBE SUITE =================
-  { id: 1301, name: "Adobe Photoshop", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
-  { id: 1302, name: "Adobe Illustrator", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1303, name: "Adobe Lightroom", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
-  { id: 1304, name: "Adobe Lightroom Classic", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
-  { id: 1305, name: "Adobe InDesign", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
-  { id: 1306, name: "Adobe Fresco", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1307, name: "Adobe Express", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1308, name: "Adobe Premiere Pro", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1309, name: "Adobe After Effects", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1310, name: "Adobe Audition", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&auto=format&fit=crop&q=60" },
-  { id: 1311, name: "Adobe Media Encoder", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1312, name: "Adobe Animate", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1313, name: "Adobe Character Animator", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1314, name: "Adobe Premiere Rush", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1315, name: "Adobe Substance 3D Painter", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1316, name: "Adobe Substance 3D Sampler", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1317, name: "Adobe Substance 3D Designer", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1318, name: "Adobe Substance 3D Stager", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1319, name: "Adobe Substance 3D Modeler", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1320, name: "Adobe Aero", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
-  { id: 1321, name: "Adobe XD", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
-  { id: 1322, name: "Adobe Dreamweaver", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&auto=format&fit=crop&q=60" },
-  { id: 1323, name: "Adobe Acrobat Pro", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
-  { id: 1324, name: "Adobe Acrobat Standard", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
-  { id: 1325, name: "Adobe Acrobat Reader", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
-  { id: 1326, name: "Adobe Scan", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
-  { id: 1327, name: "Adobe Acrobat Sign", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&auto=format&fit=crop&q=60" },
-  { id: 1328, name: "Adobe InCopy", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
-  { id: 1329, name: "Adobe Firefly", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&auto=format&fit=crop&q=60" },
-  { id: 1330, name: "Adobe Stock", price: 3199, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
-  { id: 1331, name: "Adobe Fonts", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1332, name: "Adobe Color", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
-  { id: 1333, name: "Adobe Portfolio", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
-  { id: 1334, name: "Adobe Bridge", price: 2799, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
-  { id: 1335, name: "Adobe Experience Manager (AEM)", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1336, name: "Adobe Commerce", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1337, name: "Adobe Analytics", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1338, name: "Adobe Marketo Engage", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1339, name: "Adobe Target", price: 3199, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1340, name: "Adobe Campaign", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1341, name: "Adobe Real-Time CDP", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1342, name: "Adobe Journey Optimizer", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
-  { id: 1343, name: "Adobe Workfront", price: 3599, category: "Services", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
+  { id: 1301, name: "Adobe Photoshop", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
+  { id: 1302, name: "Adobe Illustrator", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1303, name: "Adobe Lightroom", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
+  { id: 1304, name: "Adobe Lightroom Classic", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
+  { id: 1305, name: "Adobe InDesign", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
+  { id: 1306, name: "Adobe Fresco", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1307, name: "Adobe Express", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1308, name: "Adobe Premiere Pro", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1309, name: "Adobe After Effects", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1310, name: "Adobe Audition", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&auto=format&fit=crop&q=60" },
+  { id: 1311, name: "Adobe Media Encoder", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1312, name: "Adobe Animate", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1313, name: "Adobe Character Animator", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1314, name: "Adobe Premiere Rush", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1315, name: "Adobe Substance 3D Painter", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1316, name: "Adobe Substance 3D Sampler", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1317, name: "Adobe Substance 3D Designer", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1318, name: "Adobe Substance 3D Stager", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1319, name: "Adobe Substance 3D Modeler", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1320, name: "Adobe Aero", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1321, name: "Adobe XD", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
+  { id: 1322, name: "Adobe Dreamweaver", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1323, name: "Adobe Acrobat Pro", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1324, name: "Adobe Acrobat Standard", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1325, name: "Adobe Acrobat Reader", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1326, name: "Adobe Scan", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
+  { id: 1327, name: "Adobe Acrobat Sign", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&auto=format&fit=crop&q=60" },
+  { id: 1328, name: "Adobe InCopy", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
+  { id: 1329, name: "Adobe Firefly", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&auto=format&fit=crop&q=60" },
+  { id: 1330, name: "Adobe Stock", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
+  { id: 1331, name: "Adobe Fonts", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1332, name: "Adobe Color", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&auto=format&fit=crop&q=60" },
+  { id: 1333, name: "Adobe Portfolio", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
+  { id: 1334, name: "Adobe Bridge", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
+  { id: 1335, name: "Adobe Experience Manager (AEM)", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1336, name: "Adobe Commerce", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1337, name: "Adobe Analytics", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1338, name: "Adobe Marketo Engage", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1339, name: "Adobe Target", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1340, name: "Adobe Campaign", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1341, name: "Adobe Real-Time CDP", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1342, name: "Adobe Journey Optimizer", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60" },
+  { id: 1343, name: "Adobe Workfront", price: 1699, category: "Services", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=60" },
+
+  // ================= 🏛️ ARCHITECTURE & DESIGN SOFTWARE =================
+  { id: 1401, name: "Autodesk Revit", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1402, name: "Graphisoft Archicad", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1403, name: "Vectorworks Architect", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1404, name: "Allplan", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1405, name: "Autodesk AutoCAD", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1406, name: "AutoCAD Architecture", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1407, name: "Chief Architect", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1408, name: "DraftSight", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1409, name: "Rhino 3D (Rhinoceros)", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1410, name: "Grasshopper", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1411, name: "Autodesk 3ds Max", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1412, name: "Blender", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 1413, name: "Lumion", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1414, name: "Twinmotion", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1415, name: "Enscape", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1416, name: "Chaos V-Ray", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1417, name: "Chaos Corona", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1418, name: "D5 Render", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1419, name: "Autodesk Civil 3D", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&auto=format&fit=crop&q=60" },
+  { id: 1420, name: "Autodesk InfraWorks", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&auto=format&fit=crop&q=60" },
+  { id: 1421, name: "Autodesk Forma", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
+  { id: 1422, name: "ArcGIS CityEngine", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
+  { id: 1423, name: "Floorplanner", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1424, name: "Planner 5D", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
+  { id: 1425, name: "RoomSketcher", price: 1699, category: "Tools", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&auto=format&fit=crop&q=60" },
 
   // ================= 📋 BUSINESS & TAX COMPLIANCE SERVICES =================
   { id: 1101, name: "GST Registration", price: 999, category: "Services", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" },
@@ -128,7 +125,7 @@ const products = [
   { id: 705, name: "Adobe Creative Cloud (All Apps)", price: 1999, category: "Tools", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60" },
 
   // ================= 🎵 MUSIC PREMIUM & LEARNING =================
-  { id: 801, name: "Spotify Premium Individual", price: 99, category: "Tools", image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&auto=format&fit=crop&q=60" },
+  { id: 801, name: "Spotify Premium Individual", price: 99, category: "Tools", image: "https://images.unsplash.com/photo-1614680376593-902f749f7ffc?w=400&auto=format&fit=crop&q=60" },
   { id: 802, name: "YouTube Music Premium", price: 99, category: "Tools", image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=60" },
   { id: 803, name: "JioSaavn Pro Premium", price: 99, category: "Tools", image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=60" },
   { id: 804, name: "Apple Music Individual Subscription", price: 119, category: "Tools", image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=60" },
@@ -142,14 +139,14 @@ const products = [
   { id: 212, name: "Revit (For Mac / Parallels Supported)", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?w=400&auto=format&fit=crop&q=60" },
   { id: 213, name: "Civil 3D (For Mac / Parallels Supported)", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&auto=format&fit=crop&q=60" },
   { id: 214, name: "Navisworks Manage (For Mac Setup)", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&auto=format&fit=crop&q=60" },
-  { id: 215, name: "3ds Max (For Mac Setup)", price: 3599, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
+  { id: 215, name: "3ds Max (For Mac Setup)", price: 4599, category: "Tools", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=60" },
   { id: 216, name: "Recap Pro (For Mac)", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&auto=format&fit=crop&q=60" },
-  { id: 217, name: "Forma (Web / Mac Supported)", price: 2899, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
-  { id: 218, name: "Infraworks (For Mac)", price: 2999, category: "Tools", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&auto=format&fit=crop&q=60" },
+  { id: 217, name: "Forma (Web / Mac Supported)", price: 2599, category: "Tools", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&auto=format&fit=crop&q=60" },
+  { id: 218, name: "Infraworks (For Mac)", price: 2099, category: "Tools", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&auto=format&fit=crop&q=60" },
   { id: 201, name: "Microsoft Office 2021 Home & Business (For Mac)", price: 2699, category: "Office", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
   { id: 202, name: "Microsoft Office 2019 Home & Business (For Mac)", price: 2399, category: "Office", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" },
   { id: 203, name: "CleanMyMac X (Lifetime License for macOS)", price: 1499, category: "Tools", image: "https://images.unsplash.com/photo-161186871348-b1ce696e52c9?w=400&auto=format&fit=crop&q=60" },
-  { id: 204, name: "Parallels Desktop Pro (Run Windows on Mac)", price: 2099, category: "Tools", image: "https://images.unsplash.com/photo-1527443224155-c4a3942d3acf?w=400&auto=format&fit=crop&q=60" },
+  { id: 204, name: "Parallels Desktop Pro (Run Windows on Mac)", price: 2099, category: "Tools", image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&auto=format&fit=crop&q=60" },
   { id: 205, name: "Final Cut Pro (Apple Mac Video Editing)", price: 2599, category: "Tools", image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60" },
   { id: 206, name: "Logic Pro (Mac Music & Audio Production)", price: 1999, category: "Tools", image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&auto=format&fit=crop&q=60" },
   { id: 207, name: "Kaspersky Standard Security (For Mac / 1 Year)", price: 799, category: "Antivirus", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&auto=format&fit=crop&q=60" },
@@ -231,74 +228,167 @@ const products = [
   { id: 63, name: "Microsoft Visio Professional 2021 Key", price: 1399, category: "Office", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=60" }
 ];
 
-// ================= 🚀 UI LOGIC & FUNCTIONS =================
+let cart = [];
 
-function createWhatsAppLink(productName, productPrice) {
-  const message = `Hello ${SELLER_NAME}, I want to buy:\n- Product: ${productName}\n- Price: ₹${productPrice}\nPlease share payment details.`;
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-}
+function renderProducts(items = products) {
+  const grid = document.getElementById("productGrid");
+  if (!grid) return;
 
-function renderProducts(productList) {
-  const container = document.getElementById("product-container");
-  if (!container) {
-    console.error("Error: Element with id 'product-container' nahi mila!");
-    return;
-  }
-
-  if (!productList || productList.length === 0) {
-    container.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #64748b; font-size: 16px;">No products found.</p>`;
-    return;
-  }
-
-  container.innerHTML = productList.map(item => `
-    <div class="product-card" style="background: white; border-radius: 8px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); font-family: sans-serif; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #e2e8f0;">
-      <div>
-        <img src="${item.image}" alt="${item.name}" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;" loading="lazy" />
-        <span style="display: inline-block; background: #e2e8f0; color: #475569; font-size: 11px; padding: 3px 8px; border-radius: 4px; margin-top: 10px; font-weight: bold;">${item.category}</span>
-        <h3 style="font-size: 15px; margin: 8px 0; min-height: 40px; color: #1e293b;">${item.name}</h3>
+  if (items.length === 0) {
+    grid.innerHTML = `
+      <div style="grid-column: 1/-1; text-align: center; color: #94a3b8; padding: 40px; font-size: 16px;">
+        🔍 Koi product nahi mila. Dusra naam search karein.
       </div>
-      <div>
-        <div style="font-size: 18px; font-weight: bold; color: #16a34a; margin-bottom: 12px;">₹${item.price.toLocaleString("en-IN")}</div>
-        <a href="${createWhatsAppLink(item.name, item.price)}" target="_blank" style="display: block; text-align: center; background-color: #25D366; color: white; text-decoration: none; padding: 10px; border-radius: 6px; font-weight: bold; font-size: 14px;">
-          Buy on WhatsApp
-        </a>
+    `;
+    return;
+  }
+
+  grid.innerHTML = items.map(item => `
+    <div style="background: #1e293b; border: 1px solid #334155; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+      <div style="width: 100%; height: 160px; background: #0f172a; overflow: hidden;">
+        <img src="${item.image || 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400'}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;">
+      </div>
+      <div style="padding: 16px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div>
+          <span style="background: #0369a1; color: #e0f2fe; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 12px; display: inline-block; margin-bottom: 8px;">${item.category}</span>
+          <h3 style="font-size: 15px; color: #f8fafc; margin: 0 0 10px 0; font-weight: 600; line-height: 1.4; min-height: 42px;">${item.name}</h3>
+        </div>
+        <div>
+          <div style="margin: 10px 0;">
+            <span style="color: #94a3b8; font-size: 13px; text-decoration: line-through;">M.R.P: ₹${Math.round(item.price * 1.35)}</span>
+            <div style="font-size: 22px; font-weight: 800; color: #38bdf8; margin-top: 2px;">₹${item.price}</div>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button onclick="addToCart(${item.id})" style="background: #0284c7; color: white; border: none; flex: 1; padding: 10px; font-size: 13px; font-weight: 700; border-radius: 8px; cursor: pointer;">
+              🛒 Add Cart
+            </button>
+            <button onclick="orderDirect('${item.name.replace(/'/g, "\\'")}', ${item.price})" style="background: #25D366; color: white; border: none; flex: 1; padding: 10px; font-size: 13px; font-weight: 700; border-radius: 8px; cursor: pointer;">
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  `).join("");
+  `).join('');
 }
 
-function filterCategory(category) {
-  if (category === "All") {
+window.searchProducts = function() {
+  const searchInput = document.getElementById("search");
+  if (!searchInput) return;
+
+  const query = searchInput.value.trim().toLowerCase();
+  if (query === "") {
+    renderProducts(products);
+    return;
+  }
+
+  const filtered = products.filter(p =>
+    p.name.toLowerCase().includes(query) ||
+    p.category.toLowerCase().includes(query)
+  );
+
+  renderProducts(filtered);
+};
+
+window.filterCat = function(categoryName) {
+  const searchInput = document.getElementById("search");
+  if (searchInput) searchInput.value = "";
+
+  if (categoryName === "All") {
     renderProducts(products);
   } else {
-    const filtered = products.filter(p => p.category.toLowerCase() === category.toLowerCase());
+    const filtered = products.filter(p => p.category.toLowerCase() === categoryName.toLowerCase());
     renderProducts(filtered);
   }
-}
+};
 
-function searchProducts(query) {
-  const searchTerm = query.toLowerCase().trim();
-  const filtered = products.filter(p => 
-    p.name.toLowerCase().includes(searchTerm) || 
-    p.category.toLowerCase().includes(searchTerm)
-  );
-  renderProducts(filtered);
-}
+window.orderDirect = function(productName, price) {
+  const text = `Hello ${SELLER_NAME},\n\nI want to buy:\nProduct: *${productName}*\nPrice: *₹${price}*\n\nPlease share payment details and digital license.`;
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank");
+};
 
-// Auto-run (both direct and DOM event for safety)
-function initApp() {
-  renderProducts(products);
+window.addToCart = function(id) {
+  const prod = products.find(p => p.id === id);
+  if (!prod) return;
 
-  const searchInput = document.getElementById("search-input");
-  if (searchInput) {
-    searchInput.addEventListener("input", (e) => {
-      searchProducts(e.target.value);
-    });
+  const existing = cart.find(item => item.id === id);
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ ...prod, qty: 1 });
+  }
+
+  updateCartUI();
+  openCart();
+};
+
+window.removeFromCart = function(id) {
+  cart = cart.filter(item => item.id !== id);
+  updateCartUI();
+};
+
+function updateCartUI() {
+  const cartCount = document.getElementById("cartCount");
+  const cartItems = document.getElementById("cartItems");
+  const total = document.getElementById("total");
+
+  const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+  const totalPrice = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+
+  if (cartCount) cartCount.innerText = totalQty;
+  if (total) total.innerText = totalPrice;
+
+  if (cartItems) {
+    if (cart.length === 0) {
+      cartItems.innerHTML = `<p style="color: #94a3b8; text-align: center; padding: 20px;">Your cart is empty.</p>`;
+    } else {
+      cartItems.innerHTML = cart.map(item => `
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #334155;">
+          <div>
+            <div style="font-weight: 600; color: #f8fafc; font-size: 14px;">${item.name}</div>
+            <div style="font-size: 12px; color: #94a3b8;">₹${item.price} × ${item.qty}</div>
+          </div>
+          <button onclick="removeFromCart(${item.id})" style="background: #ef4444; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px;">Remove</button>
+        </div>
+      `).join('');
+    }
   }
 }
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initApp);
-} else {
-  initApp();
-}
+window.openCart = function() {
+  const modal = document.getElementById("cartModal");
+  if (modal) modal.style.display = "block";
+};
+
+window.closeCart = function() {
+  const modal = document.getElementById("cartModal");
+  if (modal) modal.style.display = "none";
+};
+
+window.checkout = function() {
+  if (cart.length === 0) {
+    alert("Cart is empty! Please add products first.");
+    return;
+  }
+
+  let text = `Hello ${SELLER_NAME},\n\nI want to place an order from CKS Shoppe:\n\n`;
+  let total = 0;
+  cart.forEach((item, index) => {
+    text += `${index + 1}. *${item.name}* (Qty: ${item.qty}) - ₹${item.price * item.qty}\n`;
+    total += item.price * item.qty;
+  });
+  text += `\n*Total Amount:* ₹${total}\n\nPlease share payment QR code and delivery.`;
+
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank");
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderProducts();
+
+  const searchInput = document.getElementById("search");
+  if (searchInput) {
+    searchInput.addEventListener("input", window.searchProducts);
+  }
+});
