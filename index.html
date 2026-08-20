@@ -19,9 +19,12 @@
     <header>
         <nav class="nav">
             <a class="logo" href="#">CKS <span>SHOPPE</span></a>
-            <div class="search">
-                <input id="search" type="text" placeholder="Search Windows, Office, Antivirus..." onkeyup="searchProducts()">
-                <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            <div class="search-wrapper">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input id="search" type="text" placeholder="Search Windows, Office, Antivirus..." oninput="searchProducts()">
+                    <button id="clearSearchBtn" class="clear-input-btn" onclick="clearSearch()">✕</button>
+                </div>
             </div>
             <div class="navlinks">
                 <a href="#products">Products</a>
@@ -90,7 +93,10 @@
     <!-- Products Grid Section -->
     <section id="products" class="section">
         <div class="section-head">
-            <h2>Featured Products</h2>
+            <div>
+                <h2>Featured Products</h2>
+                <div id="searchFeedback" class="search-feedback"></div>
+            </div>
             <button class="clear" onclick="filterCat('All')">View All Products →</button>
         </div>
         <div id="productGrid" class="grid"></div>
